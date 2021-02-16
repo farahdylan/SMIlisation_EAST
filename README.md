@@ -9,9 +9,9 @@ L'objectif est de créer en temps réel la présentation SMIL correspondante à 
 
 Notice d'utilisation:
 
-- La video du cours ainsi que le document pdf sont a deposer dans le dossier Projet
-- Les slides du cours sont a deposer dans le fichier Projet/images sous le format Page001,Page002...
-- Les noms de pages des slides doivent etre integré dans le fichier timesheets.smil qui se trouve dans le dossier projet en suivant la structure
+- La video du cours ainsi que le document pdf sont à deposer dans le dossier Projet.
+- Les slides du cours sont à deposer dans le fichier Projet/images sous le format Page001,Page002...
+- Les noms de pages des slides doivent être integré dans le fichier timesheets.smil qui se trouve dans le dossier Projet en suivant la structure.
 
 Commande bash/cmd du serveur:
 - Pour creer le serveur: npm install -g live-server
