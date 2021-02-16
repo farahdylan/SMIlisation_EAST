@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title> Aspects juridique des logiciels libres </title>
+  <link rel="timesheet" href="timesheet.smil">
+   <link rel="stylesheet" href="style/slider.css">
+   
+  <link rel="stylesheet" type="text/css" href="style/layout.css">
+  
+  <script type="text/javascript" src="../timesheets.js"></script>
+  <script type="text/javascript" src="../timesheets-controls.js"></script>
+   <script src="slider.js"></script>
+  <script type="text/javascript">
+    function setStyleSheet(select) {
+      var i, a, title = select.options[select.selectedIndex].text;
+      for (i = 0; (a = document.getElementsByTagName("link")[i]); i++)
+        if (/style/.test(a.getAttribute("rel")) && a.getAttribute("title"))
+          a.disabled = (a.getAttribute("title") != title);
+    }
+  </script>
+  <style type="text/css">
+    .smil-toc li ul {
+      display: none;
+    }
+    .smil-toc li.current ul {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    
+    <h1> Aspects juridique des logiciels libres </h1>
+    <p> Didier Courtaud, Université d'Evry. </p>
+    <p  > Vous trouverez une vidéo de l’enseignant entrain d’expliquer le cours,des slides affichés en diaporama en plus du support de cours en format pdf que vous pouvez bien évidemment télécharger et imprimer par la suite. </p>
+  </header>
+    
+  <div id="slideshow" class="cross-fade">
+    <button id="swap"><span>⤢</span></button>
+
+    <div id="images">
+      <img id="diapo01" src="images/page001.jpg">
+      <img id="diapo02" src="images/page002.jpg">
+      <!-- <img id="diapo03" src="images/page003.jpg"> -->
+      <img id="diapo04" src="images/page004.jpg">
+      <img id="diapo05" src="images/page005.jpg">
+      <img id="diapo06" src="images/page006.jpg">
+      <img id="diapo07" src="images/page007.jpg">
+      <img id="diapo08" src="images/page008.jpg">
+      <img id="diapo09" src="images/page009.jpg">
+      <img id="diapo10" src="images/page010.jpg">
+      <img id="diapo11" src="images/page011.jpg">
+      <img id="diapo12" src="images/page012.jpg">
+      <img id="diapo13" src="images/page013.jpg">
+      <img id="diapo14" src="images/page014.jpg">
+      <img id="diapo15" src="images/page016.jpg">
+      <img id="diapo16" src="images/page017.jpg">
+      <img id="diapo17" src="images/page018.jpg">
+      <img id="diapo18" src="images/page019.jpg">
+      <img id="diapo19" src="images/page020.jpg">
+      <img id="diapo20" src="images/page021.jpg">
+      <img id="diapo21" src="images/page022.jpg">
+      <img id="diapo22" src="images/page023.jpg">
+      <img id="diapo23" src="images/page023.jpg">
+    </div>
+
+    <video id="talk" width="320" height="240" autoplay>
+      <source type="video/webm" src="video.mp4"/>
+      <!-- <source type="video/webm" src="https://uevecloud.univ-evry.fr/d/972e27fd26eb44969cb7/files/?p=/Cours26Novembre.mp4"/> -->
+    </video>
+
+    <nav id="timeController">
+      <div class="smil-toc">
+        <ul class="smil-tocList">
+          <li><a href="#diapo01">Aspects juridique des logiciels libres</a></li>
+          <li><a href="#diapo02">Plan</a>
+          <!-- <li><a href="#diapo03">Introduction</a></li> -->
+          <li><a href="#diapo04">Rappel</a></li>
+          <li><a href="#diapo05">Vers un définition plus juridique</a></li>
+          </li>
+          <li><a href="#diapo06">Les licences du logiciel libre</a>
+            <ul>
+              <li><a href="#diapo07">La licence d'un logiciel</a></li>
+              <li><a href="#diapo08">licence du logiciel libre</a></li>
+              <li><a href="#diapo09">licence du logiciel libre(GPL)</a></li>
+              <li><a href="#diapo10">licence du logiciel libre(BSD)</a></li>
+              <li><a href="#diapo11">licence du logiciel libre(MIT)</a></li>
+              <li><a href="#diapo12">licence du logiciel libre(CECILL)</a></li>
+            </ul>
+          </li>
+          <li><a href="#diapo13">Une autre approche</a>
+            <ul>
+              <li><a href="#diapo14">Des juristes à l'origine</a></li>
+              <li><a href="#diapo15">Qui est intéressé ?</a></li>
+              <li><a href="#diapo16">Vue générale</a></li>
+              <li><a href="#diapo17">Différents droits</a></li>
+              <li><a href="#diapo18">Tableau des droits CC</a></li>
+              <li><a href="#diapo19">Cho Cho Choose You License</a></li>
+              <li><a href="#diapo20">Avantages des licences Creative Commons</a></li>
+            </ul>
+          </li>
+          <li><a href="#diapo21">Conclusion</a></li>
+          <li><a href="#diapo22">Conclusion (suite)</a></li>
+        </ul>
+      </div>
+
+      <div class="smil-controlBar">
+        <div class="smil-left">
+          <button class="smil-first"><span>|«</span></button>
+          <button class="smil-prev"><span>«</span></button>
+          <button class="smil-play"><span>▶||</span></button>
+          <button class="smil-next"><span>»</span></button>
+          <button class="smil-last"><span>»|</span></button>
+        </div>
+        <div class="smil-timeline">
+          <div class="smil-timeSegments"></div>
+          <div class="smil-timeCursor"></div>
+        </div>
+        <div class="smil-right smil-currentTime">0:00:00</div>
+      </div>
+    </nav>
+  </div>
+      <h1 style="text-align:center"> Cours en PDF </h1>
+
+  <div id="slider1">
+      <iframe ALIGN="center" src="CoursJuridique.pdf"  width="700" height="500"></iframe>
+    </div>
+</body>
+
+
+<body>
+    <h1 style="text-align:center"> Slides </h1>
+    <div id="slider1">
+        <img src="images/page001.jpg" alt="" id="slide" WIDTH=540 HEIGHT=380>
+        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+        <div id="suivant" onclick="ChangeSlide(1)">></div>
+    </div>
+</body>
+
+
+  
+</html>
+
+
+

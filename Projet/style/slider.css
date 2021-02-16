@@ -1,0 +1,43 @@
+body {
+    font-family: "arial", sans-serif;
+    
+}
+
+#slider1 {
+    position: relative;
+    width: 540px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+#precedent,
+#suivant {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 35px;
+    color: rgba(220, 220, 220, 0.8);
+    background-color: #A0522D;
+    padding: 10px;
+}
+
+#precedent {
+    left: 0;
+}
+
+#suivant {
+    right: 0;
+}
+
+#slider1:hover #precedent,
+#slider1:hover #suivant {
+    opacity: 1;
+}
+#iframe{ 
+    width: 100px; 
+    height: 50px; 
+    margin: 0 auto; 
+    background-color: #A0522D; }
+

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timesheet xmlns="http://www.w3.org/ns/SMIL">
+
+  <!-- diaporama -->
+  <excl timeAction="intrinsic" dur="1:04:28"
+        mediaSync="#talk" controls="#timeController" navigation="arrows; hash">
+    <item select="#diapo01" begin="0:00:00"/>
+    <item select="#diapo02" begin="0:00:47"/>
+    <item select="#diapo04" begin="0:01:28"/>
+    <item select="#diapo05" begin="0:04:54"/>
+    <item select="#diapo06" begin="0:07:03"/>
+    <item select="#diapo07" begin="0:07:15"/>
+    <item select="#diapo08" begin="0:11:47"/>
+    <item select="#diapo09" begin="0:15:55"/>
+    <item select="#diapo10" begin="0:20:08"/>
+    <item select="#diapo11" begin="0:23:10"/>
+    <item select="#diapo12" begin="0:23:41"/>
+    <item select="#diapo13" begin="0:26:19"/>
+    <item select="#diapo14" begin="0:27:16"/>
+    <item select="#diapo15" begin="0:29:55"/>
+    <item select="#diapo16" begin="0:31:27"/>
+    <item select="#diapo17" begin="0:33:46"/>
+    <item select="#diapo18" begin="0:36:58"/>
+    <item select="#diapo19" begin="0:42:39"/>
+    <item select="#diapo20" begin="0:45:27"/>
+    <item select="#diapo21" begin="0:48:19"/>
+    <item select="#diapo22" begin="0:48:24"/>
+  </excl>
+
+  <!-- permutation entre video et diapo -->
+  <par timeAction="class:swapped">
+    <item select="body" begin="swap.click" end="swap.click"/>
+  </par>
+
+</timesheet>
